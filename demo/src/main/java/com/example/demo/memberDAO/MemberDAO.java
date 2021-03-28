@@ -1,8 +1,8 @@
 package com.example.demo.memberDAO;
 
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 
-@Repository
+@Mapper
 public interface MemberDAO {
 
 	void memberInsert();

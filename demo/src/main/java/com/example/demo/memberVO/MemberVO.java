@@ -2,10 +2,36 @@ package com.example.demo.memberVO;
 
 import java.util.Date;
 
+import org.apache.ibatis.type.Alias;
+
+
+@Alias("memberVO")
 public class MemberVO {
 
 	private String name,id,pw;
 	private Date joindate;
+
+	
+	
+	public MemberVO() {}
+	
+	public MemberVO(String name, String id, String pw) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.pw = pw;
+	}
+	
+	
+	public MemberVO(String name, String id, String pw, Date joindate) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.pw = pw;
+		this.joindate = joindate;
+	}
+
+	
 	public String getName() {
 		return name;
 	}
