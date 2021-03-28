@@ -11,6 +11,6 @@ public class HomeController {
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	@ResponseBody
 	public String home() {
-		return "home home sweet home";
+		return "Test Test";
 	}
 }
