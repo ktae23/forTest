@@ -14,4 +14,12 @@ public class HomeController {
 		return "Test Test";
 	}
 	
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	@ResponseBody
+	public String test() {
+		return "Test again";
+	}
+	
 }
+	
